@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groomzy - Revolutionary Pet Grooming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --gradient-start: #4EC5F1;
+            --gradient-end: #FFAEC9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* Add this to your existing <style> section */
+/* Update the hero class */
+.hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Update the logo class */
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Maintain responsive design */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 150px;
+    }
+}
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .coming-soon-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            background: white;
+            color: var(--gradient-start);
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="coming-soon-badge">Coming Soon</div>
+            <img src="./assets/groomze1.png" alt="Groomzy" class="logo">
+            <p class="tagline">Pet Grooming Revolution:<br>Simplified & More Affordable Than Ever</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-cut fa-2x"></i>
+                <h3>Premium Service</h3>
+                <p>Expert groomers at your fingertips</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <h3>Easy Booking</h3>
+                <p>Book appointments in seconds</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-wallet fa-2x"></i>
+                <h3>Affordable Prices</h3>
+                <p>Premium care at better rates</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Be the first to know when we launch</h2>
+            <form class="email-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Get Notified</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
